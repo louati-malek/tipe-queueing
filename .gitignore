@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+.venv/
+# Original TIPE documents and any real traffic data: kept locally only, never pushed
+# (the slides show TTN's activity data, the MCOT mentions personal details).
+docs/
+data/
+*.csv
+!results/validation.csv
+cpp/build/

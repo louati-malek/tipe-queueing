@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run all experiments",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "experiments.run_all",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Run original TIPE code (2025)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/original/tipe_2025.py",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Debug tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["tests", "-q"],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
